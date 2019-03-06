@@ -7,11 +7,18 @@
 //
 
 import UIKit
-
+@IBDesignable
 class customTtField: UITextField {
 
+    override func prepareForInterfaceBuilder() {
+        customFunction()
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
+        customFunction()
+        }
+    
+    func customFunction(){
         backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.25)
         layer.cornerRadius = 5.0
         textAlignment = .center
@@ -21,7 +28,7 @@ class customTtField: UITextField {
             attributedPlaceholder = place
             textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         }
-        
     }
+
 
 }
