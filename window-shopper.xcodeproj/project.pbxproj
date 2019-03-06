@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		B7DD2EC022305920000E2352 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD2EBF22305920000E2352 /* AppDelegate.swift */; };
-		B7DD2EC222305920000E2352 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD2EC122305920000E2352 /* ViewController.swift */; };
+		B7DD2EC222305920000E2352 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD2EC122305920000E2352 /* MainVC.swift */; };
 		B7DD2EC522305920000E2352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DD2EC322305920000E2352 /* Main.storyboard */; };
 		B7DD2EC722305923000E2352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7DD2EC622305923000E2352 /* Assets.xcassets */; };
 		B7DD2ECA22305923000E2352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DD2EC822305923000E2352 /* LaunchScreen.storyboard */; };
+		B7DD2ED6223061C8000E2352 /* customTtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD2ED5223061C8000E2352 /* customTtField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B7DD2EBC22305920000E2352 /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DD2EBF22305920000E2352 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B7DD2EC122305920000E2352 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7DD2EC122305920000E2352 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B7DD2EC422305920000E2352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7DD2EC622305923000E2352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7DD2EC922305923000E2352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7DD2ECB22305923000E2352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7DD2ED5223061C8000E2352 /* customTtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTtField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		B7DD2EBE22305920000E2352 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				B7DD2ED222305E66000E2352 /* View */,
+				B7DD2ED122305E3D000E2352 /* Controller */,
 				B7DD2EBF22305920000E2352 /* AppDelegate.swift */,
-				B7DD2EC122305920000E2352 /* ViewController.swift */,
 				B7DD2EC322305920000E2352 /* Main.storyboard */,
 				B7DD2EC622305923000E2352 /* Assets.xcassets */,
 				B7DD2EC822305923000E2352 /* LaunchScreen.storyboard */,
 				B7DD2ECB22305923000E2352 /* Info.plist */,
 			);
 			path = "window-shopper";
+			sourceTree = "<group>";
+		};
+		B7DD2ED122305E3D000E2352 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B7DD2EC122305920000E2352 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B7DD2ED222305E66000E2352 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7DD2ED5223061C8000E2352 /* customTtField.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7DD2EC222305920000E2352 /* ViewController.swift in Sources */,
+				B7DD2EC222305920000E2352 /* MainVC.swift in Sources */,
+				B7DD2ED6223061C8000E2352 /* customTtField.swift in Sources */,
 				B7DD2EC022305920000E2352 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
